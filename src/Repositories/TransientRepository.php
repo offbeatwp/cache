@@ -5,19 +5,19 @@ namespace OffbeatWP\Cache\Repositories;
 class TransientRepository
 {
 
-    public function setCache($transient, $value, $expiration = 0)
+    public function setCache($key, $value, $expiration = 0)
     {
-        set_transient($transient, $value, $expiration);
+        set_transient($key, $value, $expiration);
     }
 
-    public function getCache($transient)
+    public function getCache($key)
     {
-        return get_transient($transient);
+        return get_transient($key);
     }
 
-    public function deleteCache($transient)
+    public function deleteCache($key)
     {
-        return delete_transient($transient);
+        return delete_transient($key);
     }
 
 
