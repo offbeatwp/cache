@@ -11,7 +11,6 @@ class Service extends AbstractService
 
     public function register(SiteSettings $settings)
     {
-        $settings->addPage(AddSettings::class);
 
     }
 
