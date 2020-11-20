@@ -2,7 +2,7 @@
 
 namespace OffbeatWP\Cache;
 
-use OffbeatWP\Cache\Repositories\CacheRepository;
+use OffbeatWP\Cache\Repositories\AbstractCacheRepository;
 use OffbeatWP\Contracts\SiteSettings;
 use OffbeatWP\Services\AbstractService;
 
@@ -10,7 +10,7 @@ class Service extends AbstractService
 {
 
     public $binding = [
-        CacheRepository::class => CacheRepository::class
+        AbstractCacheRepository::class => AbstractCacheRepository::class
     ];
 
     protected $settings;

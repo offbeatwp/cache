@@ -2,7 +2,7 @@
 
 namespace OffbeatWP\Cache\Repositories;
 
-class TransientRepository
+class TransientRepository extends AbstractCacheRepository
 {
 
     public function setCache($key, $value, $expiration = 0)
@@ -19,6 +19,5 @@ class TransientRepository
     {
         return delete_transient($key);
     }
-
 
 }
