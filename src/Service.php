@@ -11,6 +11,7 @@ class Service extends AbstractService
 
     public function register(SiteSettings $settings)
     {
+//        test
 
     }
 
