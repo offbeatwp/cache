@@ -15,9 +15,5 @@ class Service extends AbstractService
 
     protected $settings;
 
-    public function register(SiteSettings $settings)
-    {
-
-    }
 
 }

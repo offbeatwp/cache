@@ -2,7 +2,7 @@
 
 namespace OffbeatWP\Cache\Repositories;
 
-class CacheRepository
+class CacheRepository extends TransientRepository
 {
 
 
